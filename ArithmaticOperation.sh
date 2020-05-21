@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 #!/bin/bash -x
 declare -A results
 read -p "Take First Input " a
@@ -16,5 +14,12 @@ echo "$g result " ${result[g]}
 echo "All Values Result " ${results[@]}
 echo "Values " ${!results[@]}
 echo "Number of Values " ${#results[@]}
+arr()
+counter=0
+results[((counter++))]="$d"
+results[((counter++))]="$e"
+results[((counter++))]="$f"
+results[((counter++))]="$g"
+echo ${results[@]}
 
->>>>>>> UC6
+
